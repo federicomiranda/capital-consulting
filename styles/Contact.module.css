@@ -1,0 +1,141 @@
+.section {
+  padding: 64px 0;
+}
+
+.title {
+  color: var(--gris-oscuro);
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+  letter-spacing: 4px;
+}
+
+.content {
+  display: flex;
+}
+
+.form {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 128px;
+}
+
+.form div {
+  width: 48%;
+  margin-bottom: 24px;
+}
+
+.form .textareacontainer {
+  width: 100%;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--gris-oscuro);
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.input,
+.textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--azul);
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+  font-weight: 300;
+  color: var(--gris-oscuro);
+  resize: none;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 10px 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--blanco);
+  background: var(--azul);
+  font-weight: 300;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--gris-oscuro);
+}
+
+.data {
+  flex: 2;
+  margin-top: 24px;
+}
+
+.data li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.data li:last-child {
+  margin-bottom: 0;
+}
+
+.data li img {
+  margin-right: 16px;
+}
+
+.data li p {
+  color: var(--gris-oscuro);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 32px 0;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .form {
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-right: 0;
+  }
+  .form div {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .label {
+    font-size: 14px;
+  }
+  .input,
+  .textarea {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .data {
+    flex: 1;
+  }
+  .data li img {
+    width: 30px;
+  }
+  .data li p {
+    font-size: 14px;
+  }
+}
